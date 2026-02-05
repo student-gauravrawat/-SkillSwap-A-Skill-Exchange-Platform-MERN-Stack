@@ -100,33 +100,37 @@ Image storage using **Cloudinary**
 * CORS
 * Helmet
 
-📂 Project Structure
-Backend
-backend/
- ├── src/
- │   ├── controllers/
- │   ├── models/
- │   ├── routes/
- │   ├── middleware/
- │   ├── utils/
- │   ├── db/
- │   ├── app.js
- │   └── index.js
- ├── public/
- └── package.json
+## 📂 Project Structure
 
-Frontend
-frontend/
- ├── src/
- │   ├── components/
- │   ├── pages/
- │   ├── routes/
- │   ├── redux/
- │   ├── services/
- │   ├── utils/
- │   └── main.jsx
- ├── index.html
- └── package.json
+### Backend
+
+```
+  src/
+    ├── controllers/
+    ├── models/
+    ├── routes/
+    ├── middleware/
+    ├── utils/
+    ├── db/
+    ├── app.js
+    └── index.js
+
+```
+
+### Frontend
+
+```
+
+ src/
+  ├── components/
+  ├── pages/
+  ├── routes/
+  ├── redux/
+  ├── services/
+  ├── utils/
+  └── main.jsx
+```
+ 
 
 ## 🔐 Authentication Flow (High Level)
 
