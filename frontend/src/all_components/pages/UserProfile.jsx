@@ -49,7 +49,7 @@ function UserProfile() {
         <div className="w-full md:w-[35%] bg-linear-to-br from-indigo-50 via-white to-white p-8 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-100">
           <div className=" group flex items-center justify-center">
             <img
-              src={user?.avatar?.url || "/userimage.webp"}
+              src={user?.avatar?.url?.replace("http://", "https://") || "/userimage.webp"}
               alt="Profile"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg border-4 border-white"
             />

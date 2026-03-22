@@ -47,7 +47,7 @@ function SearchPortal({ open, result, close, loading }) {
             {/* Left Side: Avatar */}
             <div className="shrink-0">
               <img
-                src={user.avatar || "/userimage.webp"}
+                src={user.avatar?.replace("http://", "https://") || "/userimage.webp"}
                 alt={user.fullName}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-white shadow-sm ring-1 ring-gray-100"
               />

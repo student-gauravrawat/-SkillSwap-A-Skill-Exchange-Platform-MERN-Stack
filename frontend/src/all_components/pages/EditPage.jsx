@@ -62,7 +62,7 @@ function EditPage() {
           
             <div className=" group flex items-center justify-center">
             <img
-              src={authUser?.avatar?.url || "/userimage.webp"}
+              src={authUser?.avatar?.url?.replace("http://", "https://") || "/userimage.webp"}
               alt="Profile"
               className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white"
             />
