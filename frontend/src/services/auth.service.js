@@ -13,7 +13,7 @@ export const register = async(userData)=>{
           }
         )
        toast.success(response?.data?.message)
-       return response.data; 
+       return response?.data; 
 
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -36,7 +36,7 @@ export const emailVerify = async(data)=>{
      )
 
      toast.success(response?.data?.message)
-     return response.data;
+     return response?.data;
 
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -58,7 +58,7 @@ export const resendOtp = async(data)=>{
              }
         )
        toast.success(response?.data?.message)
-       return response.data; 
+       return response?.data; 
        
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -80,9 +80,9 @@ export const login = async(userData)=>{
          }
       )
        if(!response) return;
-       console.log(response.data.data)
+       console.log(response?.data?.data)
        toast.success(response?.data?.message)
-       return response.data.data;
+       return response?.data?.data;
 
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -96,7 +96,7 @@ export const login = async(userData)=>{
 export const logout = async()=>{
    try {
       const response = await api.get(`/users/logout`)
-     toast.success(response?.data?.message)
+      toast.success(response?.data?.message)
 
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -110,7 +110,7 @@ export const logout = async()=>{
 export const getUser = async(userId)=>{
    try {
       const response = await api.get(`/users/get-user/${userId}`);
-       return response.data.data[0];
+       return response?.data?.data[0];
        
    } catch (error) {
        const msg = error?.response?.data?.error ||
@@ -202,7 +202,7 @@ export const getAllUser = async(searchQuery)=>{
   try {
     const response = await api.get(`/users/search-skill?query=${searchQuery}`)
    //  console.log(response.data.data)
-    return response.data.data;
+    return response?.data?.data;
 
   } catch (error) {
       const msg = error?.response?.data?.error ||
