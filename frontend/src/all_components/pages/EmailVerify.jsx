@@ -126,7 +126,7 @@ function EmailVerify() {
                 {loading ? (
                   <span className="flex items-center justify-center gap-2">
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    Verifying...
+                    Email Verifying...
                   </span>
                 ) : "Verify Email"}
               </button>
