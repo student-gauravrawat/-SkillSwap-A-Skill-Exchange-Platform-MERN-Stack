@@ -19,6 +19,7 @@ function Signup() {
   const onSubmitHander = async(e)=>{
      e.preventDefault()
      setLoading(true)
+     alert("please wait⏳ first API call takes time")
 
      try {
         await register(user)
