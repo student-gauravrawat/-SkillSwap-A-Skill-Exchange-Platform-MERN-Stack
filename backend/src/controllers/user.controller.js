@@ -72,7 +72,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   return res
     .status(200)
-    .json(new ApiResponse(200, createdUser, "Account register Sucessfully. OTP has been sent to your email."));
+    .json(new ApiResponse(200, createdUser, "Account register Sucessfully. OTP has been sent to your email. please check your mail or span box!"));
 });
 
 const verifyEmailOtp = asyncHandler( async(req, res)=>{
